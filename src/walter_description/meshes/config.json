@@ -1,0 +1,42 @@
+{
+    
+    "onshape_api": "https://cad.onshape.com",
+    "onshape_access_key": "o8uv5wn2M69viFKMQ1qXopAz",
+    "onshape_secret_key": "lfqIXpnDZze1cAynXVnuNY0uQscSPjunKv5SmzIqdoyXOzMp",
+
+    "documentId": "cedd0ec0cc2b4544a8da0cc6",
+    "assemblyName": "walter",
+    
+    "outputFormat": "urdf",
+    "packageName": "meshes",
+    "robotName": "Walter",
+    "drawFrames": false,
+
+    "drawCollisions": false,
+   
+    "useScads": true,
+    
+    "noDynamics": false,
+    
+    "mergeSTLs": "no",
+   
+    "simplifySTLs": "no",
+ 
+    "maxSTLSize": 3,
+    "meshFormat": "dae",
+
+  
+    "jointMaxEffort": {
+        "default": 1.5,
+        "head_pitch": 0.5
+    },
+    "jointMaxVelocity": 22,
+
+ 
+    "dynamics": {
+       
+        
+        "base": "fixed"
+    }
+
+}
