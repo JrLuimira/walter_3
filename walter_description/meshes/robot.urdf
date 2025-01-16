@@ -1,0 +1,706 @@
+<?xml version="1.0"?>
+<robot name="Walter">
+    <link name="panza">
+        <visual>
+            <origin xyz="0 1.1102230246251565404e-16 0.18240000000000003433" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/torso.stl" />
+            </geometry>
+            <material name="torso_material">
+                <color
+                    rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 1.1102230246251565404e-16 0.18240000000000003433" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/torso.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin
+                xyz="3.5366736310120970201e-06 -1.0164944249061171209e-06 0.28644383296951664297"
+                rpy="0 0 0" />
+            <mass value="37.981250382069404736" />
+            <inertia ixx="0.93147768307078548933" ixy="1.0314156922500628319e-05"
+                ixz="3.7114421258874978012e-06" iyy="0.93168041764494258228"
+                iyz="-1.7562940793422055845e-06" izz="0.68744587515199118144" />
+        </inertial>
+    </link>
+
+    <link name="cabeza_pecho">
+        <visual>
+            <origin xyz="0 0 0" rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/pecho.stl" />
+            </geometry>
+            <material name="pecho_material">
+                <color
+                    rgba="0.90196078431372550543 0.90196078431372550543 0.90196078431372550543 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/pecho.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.053753999999999975412 -0.00049666369844000987296 -0.26946876167438182925"
+                rpy="3.141592653589793116 6.8406778523187796684e-17 3.0535359083687331329e-16" />
+            <geometry>
+                <mesh filename="package://meshes/pantalla.stl" />
+            </geometry>
+            <material name="pantalla_material">
+                <color rgba="0 0 0 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.053753999999999975412 -0.00049666369844000987296 -0.26946876167438182925"
+                rpy="3.141592653589793116 6.8406778523187796684e-17 3.0535359083687331329e-16" />
+            <geometry>
+                <mesh filename="package://meshes/pantalla.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.034999999999999975575 2.5088733430774139339e-17 -0.26999999999999979572"
+                rpy="3.141592653589793116 -7.7355025826137686325e-17 -7.3589012180439136812e-17" />
+            <geometry>
+                <mesh filename="package://meshes/cabeza.stl" />
+            </geometry>
+            <material name="cabeza_material">
+                <color
+                    rgba="0.90196078431372550543 0.90196078431372550543 0.90196078431372550543 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.034999999999999975575 2.5088733430774139339e-17 -0.26999999999999979572"
+                rpy="3.141592653589793116 -7.7355025826137686325e-17 -7.3589012180439136812e-17" />
+            <geometry>
+                <mesh filename="package://meshes/cabeza.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-2.1692739762109589967e-17 0.19500000000000008993 -0.017779999999999795968"
+                rpy="3.141592653589793116 -6.0722997586192119681e-17 -3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://meshes/brazo1.stl" />
+            </geometry>
+            <material name="brazo1_material">
+                <color
+                    rgba="0.90196078431372550543 0.90196078431372550543 0.90196078431372550543 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-2.1692739762109589967e-17 0.19500000000000008993 -0.017779999999999795968"
+                rpy="3.141592653589793116 -6.0722997586192119681e-17 -3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://meshes/brazo1.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.057753999999999861004 0.098068036301559927126 -0.29108611507324799739"
+                rpy="-7.3350342098026672589e-16 -2.8017321897529687462e-17 -1.5707963267948952257" />
+            <geometry>
+                <mesh filename="package://meshes/ojo2.stl" />
+            </geometry>
+            <material name="ojo2_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.057753999999999861004 0.098068036301559927126 -0.29108611507324799739"
+                rpy="-7.3350342098026672589e-16 -2.8017321897529687462e-17 -1.5707963267948952257" />
+            <geometry>
+                <mesh filename="package://meshes/ojo2.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin
+                xyz="-3.4453916703380334622e-17 -0.17999999999999996558 -0.017780000000000018012"
+                rpy="3.141592653589793116 -0 -3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://meshes/brazo1.stl" />
+            </geometry>
+            <material name="brazo1_material">
+                <color
+                    rgba="0.90196078431372550543 0.90196078431372550543 0.90196078431372550543 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin
+                xyz="-3.4453916703380334622e-17 -0.17999999999999996558 -0.017780000000000018012"
+                rpy="3.141592653589793116 -0 -3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://meshes/brazo1.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.054754000000000087323 -0.099061363698439999781 -0.26060611507324815683"
+                rpy="3.1415926535897926719 -2.8017321897529699788e-17 -1.5707963267948952257" />
+            <geometry>
+                <mesh filename="package://meshes/ojo1.stl" />
+            </geometry>
+            <material name="ojo1_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.054754000000000087323 -0.099061363698439999781 -0.26060611507324815683"
+                rpy="3.1415926535897926719 -2.8017321897529699788e-17 -1.5707963267948952257" />
+            <geometry>
+                <mesh filename="package://meshes/ojo1.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin
+                xyz="0.0028573153887627607272 -0.0002012311481044719763 -0.097048300226775963129"
+                rpy="0 0 0" />
+            <mass value="32.627310559743186502" />
+            <inertia ixx="0.45835735904785535055" ixy="-3.0117330015620865594e-05"
+                ixz="0.0070489790316395923436" iyy="0.41043097378725618141"
+                iyz="-0.0011608579805896907747" izz="0.38894053221065316706" />
+        </inertial>
+    </link>
+
+    <joint name="pecho" type="fixed">
+        <origin xyz="0 1.1990099175633397595e-16 0.80740540000000016185"
+            rpy="3.141592653589793116 -0 -1.57079632679489678" />
+        <parent link="panza" />
+        <child link="cabeza_pecho" />
+        <axis xyz="0 0 1" />
+        <limit effort="1.5" velocity="22" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <link name="fijos_inferior">
+        <visual>
+            <origin xyz="-8.6736173798840354721e-18 0.20637340124470729408 -0.17240000000000002545"
+                rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/eje_caster.stl" />
+            </geometry>
+            <material name="eje_caster_material">
+                <color
+                    rgba="0.49803921568627451677 0.49803921568627451677 0.49803921568627451677 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-8.6736173798840354721e-18 0.20637340124470729408 -0.17240000000000002545"
+                rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/eje_caster.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="2.7755575615628913511e-17 -0.13017340124470755391 -0.058100000000000012745"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/bloque_1.stl" />
+            </geometry>
+            <material name="bloque_1_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="2.7755575615628913511e-17 -0.13017340124470755391 -0.058100000000000012745"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/bloque_1.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="2.7755575615628913511e-17 0.13017340124470727636 -0.058100000000000012745"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/bloque_1.stl" />
+            </geometry>
+            <material name="bloque_1_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="2.7755575615628913511e-17 0.13017340124470727636 -0.058100000000000012745"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/bloque_1.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin
+                xyz="2.7755575615628913511e-17 -1.6653345369377348106e-16 -0.14740000000000005875"
+                rpy="0 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/eje.stl" />
+            </geometry>
+            <material name="eje_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin
+                xyz="2.7755575615628913511e-17 -1.6653345369377348106e-16 -0.14740000000000005875"
+                rpy="0 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/eje.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.031749999999999993505 0.19049840124470729386 -0.22139800000000003921"
+                rpy="3.141592653589793116 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/llanta_izquierda.stl" />
+            </geometry>
+            <material name="llanta_izquierda_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.031749999999999993505 0.19049840124470729386 -0.22139800000000003921"
+                rpy="3.141592653589793116 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/llanta_izquierda.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.031750000000000035139 -0.19049840124470757141 -0.22139800000000003921"
+                rpy="0 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/llanta_izquierda.stl" />
+            </geometry>
+            <material name="llanta_izquierda_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.031750000000000035139 -0.19049840124470757141 -0.22139800000000003921"
+                rpy="0 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/llanta_izquierda.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.21499999999999999667 -0.11747340124470750933 -0.010000000000000008882"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/varilla.stl" />
+            </geometry>
+            <material name="varilla_material">
+                <color rgba="0 0 0 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.21499999999999999667 -0.11747340124470750933 -0.010000000000000008882"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/varilla.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin
+                xyz="2.7755575615628913511e-17 -1.6653345369377348106e-16 -0.17240000000000002545"
+                rpy="0 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://meshes/protector_1.stl" />
+            </geometry>
+            <material name="protector_1_material">
+                <color
+                    rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin
+                xyz="2.7755575615628913511e-17 -1.6653345369377348106e-16 -0.17240000000000002545"
+                rpy="0 -0 3.141592653589793116" />
+            <geometry>
+                <mesh filename="package://meshes/protector_1.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin
+                xyz="2.7755575615628913511e-17 -1.6653345369377348106e-16 -0.18240000000000003433"
+                rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/base.stl" />
+            </geometry>
+            <material name="base_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin
+                xyz="2.7755575615628913511e-17 -1.6653345369377348106e-16 -0.18240000000000003433"
+                rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/base.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin
+                xyz="2.7755575615628913511e-17 -5.5511151231257827021e-17 -0.035400000000000014788"
+                rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/liddar.stl" />
+            </geometry>
+            <material name="liddar_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin
+                xyz="2.7755575615628913511e-17 -5.5511151231257827021e-17 -0.035400000000000014788"
+                rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/liddar.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.031749999999999972689 -0.19049840124470757141 -0.22139800000000003921"
+                rpy="3.141592653589793116 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/llanta_izquierda.stl" />
+            </geometry>
+            <material name="llanta_izquierda_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.031749999999999972689 -0.19049840124470757141 -0.22139800000000003921"
+                rpy="3.141592653589793116 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/llanta_izquierda.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.21499999999999988565 0.11747340124470734279 -0.010000000000000008882"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/varilla.stl" />
+            </geometry>
+            <material name="varilla_material">
+                <color rgba="0 0 0 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.21499999999999988565 0.11747340124470734279 -0.010000000000000008882"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/varilla.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-2.7755575615628913511e-17 -2.7755575615628913511e-17 0"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/base.stl" />
+            </geometry>
+            <material name="base_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-2.7755575615628913511e-17 -2.7755575615628913511e-17 0"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/base.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-9.2690810421447531511e-18 -0.20637340124470757163 -0.17240000000000002545"
+                rpy="0 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/eje_caster.stl" />
+            </geometry>
+            <material name="eje_caster_material">
+                <color
+                    rgba="0.49803921568627451677 0.49803921568627451677 0.49803921568627451677 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-9.2690810421447531511e-18 -0.20637340124470757163 -0.17240000000000002545"
+                rpy="0 -0 1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/eje_caster.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin
+                xyz="2.7755575615628913511e-17 -1.0287873947806897903e-16 -0.04540000000000002367"
+                rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/base.stl" />
+            </geometry>
+            <material name="base_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin
+                xyz="2.7755575615628913511e-17 -1.0287873947806897903e-16 -0.04540000000000002367"
+                rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/base.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-3.0335126963683255566e-17 -0.17462340124470757119 -0.2188580000000000525"
+                rpy="0 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/base_caster.stl" />
+            </geometry>
+            <material name="base_caster_material">
+                <color
+                    rgba="0.49803921568627451677 0.49803921568627451677 0.49803921568627451677 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-3.0335126963683255566e-17 -0.17462340124470757119 -0.2188580000000000525"
+                rpy="0 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/base_caster.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-8.6736173798840354721e-18 0.20637340124470729408 -0.2188580000000000525"
+                rpy="0 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/base_caster.stl" />
+            </geometry>
+            <material name="base_caster_material">
+                <color
+                    rgba="0.49803921568627451677 0.49803921568627451677 0.49803921568627451677 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-8.6736173798840354721e-18 0.20637340124470729408 -0.2188580000000000525"
+                rpy="0 -0 -1.570796326794896558" />
+            <geometry>
+                <mesh filename="package://meshes/base_caster.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin
+                xyz="2.7755575615628913511e-17 -1.6653345369377348106e-16 -0.04540000000000002367"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/protector_2.stl" />
+            </geometry>
+            <material name="protector_2_material">
+                <color
+                    rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin
+                xyz="2.7755575615628913511e-17 -1.6653345369377348106e-16 -0.04540000000000002367"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/protector_2.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.031750000000000014322 0.19049840124470729386 -0.22139800000000003921"
+                rpy="5.6331306980660048516e-17 -1.4803827447097239745 1.57079632679489678" />
+            <geometry>
+                <mesh filename="package://meshes/llanta_izquierda.stl" />
+            </geometry>
+            <material name="llanta_izquierda_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.031750000000000014322 0.19049840124470729386 -0.22139800000000003921"
+                rpy="5.6331306980660048516e-17 -1.4803827447097239745 1.57079632679489678" />
+            <geometry>
+                <mesh filename="package://meshes/llanta_izquierda.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin
+                xyz="2.7755575615628913511e-17 -1.6653345369377348106e-16 -0.17240000000000002545"
+                rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/tope.stl" />
+            </geometry>
+            <material name="tope_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin
+                xyz="2.7755575615628913511e-17 -1.6653345369377348106e-16 -0.17240000000000002545"
+                rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/tope.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.21499999999999994116 -0.11747340124470756484 -0.010000000000000008882"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/varilla.stl" />
+            </geometry>
+            <material name="varilla_material">
+                <color rgba="0 0 0 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.21499999999999994116 -0.11747340124470756484 -0.010000000000000008882"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/varilla.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="-0.21499999999999994116 0.11747340124470734279 -0.010000000000000008882"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/varilla.stl" />
+            </geometry>
+            <material name="varilla_material">
+                <color rgba="0 0 0 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.21499999999999994116 0.11747340124470734279 -0.010000000000000008882"
+                rpy="3.141592653589793116 -0 0" />
+            <geometry>
+                <mesh filename="package://meshes/varilla.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="4.8755124243032850978e-17 0.00028229490748469165864 -0.1190608960546041678"
+                rpy="0 0 0" />
+            <mass value="23.451885906466657161" />
+            <inertia ixx="0.5136163541739194871" ixy="-4.704014413235702019e-16"
+                ixz="-7.4759127924664547926e-18" iyy="0.19782710769341591006"
+                iyz="-6.7268667490374191862e-05" izz="0.64909526272690487581" />
+        </inertial>
+    </link>
+
+    <link name="rueda">
+        <visual>
+            <origin xyz="0 1.7347234759768070944e-18 -0.015000000000000013323"
+                rpy="1.570796326794896558 -4.8166279312749192404e-17 1.1043110575768980303e-17" />
+            <geometry>
+                <mesh filename="package://meshes/llanta.stl" />
+            </geometry>
+            <material name="llanta_material">
+                <color
+                    rgba="0.49803921568627451677 0.49803921568627451677 0.49803921568627451677 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 1.7347234759768070944e-18 -0.015000000000000013323"
+                rpy="1.570796326794896558 -4.8166279312749192404e-17 1.1043110575768980303e-17" />
+            <geometry>
+                <mesh filename="package://meshes/llanta.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0 1.7347234759768070944e-18 -0.015000000000000013323"
+                rpy="1.570796326794896558 4.8166279312749192404e-17 1.1043110575768980303e-17" />
+            <geometry>
+                <mesh filename="package://meshes/aro.stl" />
+            </geometry>
+            <material name="aro_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 1.7347234759768070944e-18 -0.015000000000000013323"
+                rpy="1.570796326794896558 4.8166279312749192404e-17 1.1043110575768980303e-17" />
+            <geometry>
+                <mesh filename="package://meshes/aro.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin
+                xyz="-2.2944407627324771669e-19 -1.8380720960163145317e-18 -0.015000000000000016792"
+                rpy="0 0 0" />
+            <mass value="1.2695552659388233963" />
+            <inertia ixx="0.002806254295122597147" ixy="1.095511843614715085e-19"
+                ixz="7.0997297655306832548e-20" iyy="0.0028062542951225984481"
+                iyz="-4.5719182538600721348e-36" izz="0.0054879451125068694217" />
+        </inertial>
+    </link>
+
+    <joint name="1" type="revolute">
+        <origin xyz="-0.22999999999999989897 -1.2585418818211734977e-16 -0.147400000000000031"
+            rpy="1.570796326794896558 1.3479208634112187504 1.570796326794896558" />
+        <parent link="fijos_inferior" />
+        <child link="rueda" />
+        <axis xyz="0 0 1" />
+        <limit effort="1.5" velocity="22" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <link name="rueda_2">
+        <visual>
+            <origin xyz="0 0 -0.014999999999999985567"
+                rpy="-1.570796326794896558 4.8166279312749512878e-17 -1.1024719869637745434e-17" />
+            <geometry>
+                <mesh filename="package://meshes/llanta.stl" />
+            </geometry>
+            <material name="llanta_material">
+                <color
+                    rgba="0.49803921568627451677 0.49803921568627451677 0.49803921568627451677 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 -0.014999999999999985567"
+                rpy="-1.570796326794896558 4.8166279312749512878e-17 -1.1024719869637745434e-17" />
+            <geometry>
+                <mesh filename="package://meshes/llanta.stl" />
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0 0 -0.015000000000000013323"
+                rpy="-1.570796326794896558 -4.8166279312749364967e-17 -1.1024719869637745434e-17" />
+            <geometry>
+                <mesh filename="package://meshes/aro.stl" />
+            </geometry>
+            <material name="aro_material">
+                <color rgba="0 0 1 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 -0.015000000000000013323"
+                rpy="-1.570796326794896558 -4.8166279312749364967e-17 -1.1024719869637745434e-17" />
+            <geometry>
+                <mesh filename="package://meshes/aro.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <origin
+                xyz="-2.2944407627324805372e-19 3.5727955719931216261e-18 -0.015000000000000006384"
+                rpy="0 0 0" />
+            <mass value="1.2695552659388233963" />
+            <inertia ixx="0.0028062542951225984481" ixy="-2.333516205509314518e-19"
+                ixz="-7.0997297655306603843e-20" iyy="0.0028062542951225984481"
+                iyz="5.5228656594366186375e-34" izz="0.0054879451125068694217" />
+        </inertial>
+    </link>
+
+    <joint name="2" type="revolute">
+        <origin xyz="0.23000000000000014877 -1.2164877667205270128e-16 -0.147400000000000031"
+            rpy="-1.5707963267948978903 -0.60873111125920864595 1.5707963267948985564" />
+        <parent link="fijos_inferior" />
+        <child link="rueda_2" />
+        <axis xyz="0 0 1" />
+        <limit effort="1.5" velocity="22" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="cuerpo" type="fixed">
+        <origin xyz="-2.7755575615628913511e-17 1.6653345369377348106e-16 0.18240000000000003433"
+            rpy="0 -0 0" />
+        <parent link="panza" />
+        <child link="fijos_inferior" />
+        <axis xyz="0 0 1" />
+        <limit effort="1.5" velocity="22" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+
+</robot>
